@@ -7,6 +7,7 @@ public final class CdkWorkshopApp {
         App app = new App();
 
         new CdkWorkshopStack(app, "CdkWorkshopStack");
+        new WorkshopPipelineStack(app, "WorkshopPipelineStack");
 
         app.synth();
     }
