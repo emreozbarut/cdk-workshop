@@ -43,6 +43,7 @@ public class WorkshopPipelineStack extends Stack {
                         .sourceArtifact(sourceArtifact)
                         .cloudAssemblyArtifact(cloudAssemblyArtifact)
                         .buildCommands(Collections.singletonList("mvn clean package"))
+                        .synthCommand("cdk synth")
                         .build()))
                 .build());
     }
